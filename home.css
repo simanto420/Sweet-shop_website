@@ -1,0 +1,331 @@
+@import url('Https://fonts.googleapis.com.css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sparten',sans-serif;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+    
+}
+.section-m1 {
+    margin: 40px 0;
+}
+button.normal {
+    font-size: .9em;
+    font-weight: 500;
+    padding: 15px 30px;
+    color: black;
+    background-color: bisque;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: .4s;
+}
+button.classic {
+    font-size: .8em;
+    font-weight: 600;
+    padding: 13px 18px;
+    color: black;
+    background:transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    border:1px solid #465b52;
+    outline: none;
+    transition: .4s;
+}
+body {
+    width: 100%;
+}
+/* Header start */
+#header {
+display: flex;
+align-items: center;
+justify-content:space-between;
+padding: 20px 80px;
+background:transparent;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 06);
+z-index: 999;
+position: sticky;
+left: 0;
+top: 0;
+}
+#navber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navber li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navber li a {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    color: #76e377;
+    transition:.3s ease;
+}
+#navber li a:hover,
+#navber li a.active {
+    color: #a3c11f;
+}
+#navber li a.active::after,
+#navber li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    margin-top: 16px;
+    background: #35c8d0c1;
+    position: absolute;
+    bottom: 10;
+    left: 20px;
+}
+/* Home page */
+#hero {
+    background-image: url(./gmv-imges/bg.png);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position:top 25% right 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#hero h1 {
+    color:#fff;
+    font-weight: 1000;
+    font-size: 4em;
+    font-family: 'Times New Roman';
+}
+#hero h2 {
+    color: #E3E6F3;
+    font-weight: 500;
+    font-size: 3em;
+    font-family: 'Times New Roman';
+    padding-left: 100px;
+}
+#hero h4 {
+    color: antiquewhite;
+    padding-left: 100px;
+    font-size: 1.5em;
+    font-family: 'Gill Sans';
+}
+#hero h5 {
+    color: #f3e463;
+    font-size: 1em;
+    padding-left: 175px;
+    margin-top: 50px;
+}
+#hero button {
+   margin: 10px;
+   margin-left: 135px;
+    padding:10px 30px;
+    font-size: 1.3em;
+    color: #f3e463;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #f3e463;
+    border-radius: 50px;
+    transition: .6s;
+
+}
+#hero button:hover {
+    background-color: #465b52;
+}
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 2px solid #cce7d0;
+    border-radius: 10px;
+    margin: 15px 30px;
+    transition: 1s;
+}
+#feature .fe-box:hover {
+    transform: rotate(360deg);
+}
+#feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+#feature .fe-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px ;
+    line-height: 1;
+    border-radius: 5px;
+    color: #088178;
+    background-color: #fddde4;
+}
+#feature .fe-box:nth-child(2) h6 {
+    background-color: #cdebbc;
+}
+#feature .fe-box:nth-child(3) h6 {
+    background-color: #c0db2c;}
+
+#feature .fe-box:nth-child(4) h6 {
+        background-color: #67b0e1;
+}
+#feature .fe-box:nth-child(5) h6 {
+    background-color: #a69af0;
+}
+#feature .fe-box:nth-child(6) h6 {
+    background-color: #e7d362a4;
+}
+#product1 {
+    text-align: center;
+}
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    margin-top: 20px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    position: relative;
+    
+}
+#product1 .pro img {
+    width: 100%;
+    border-radius: 40px;
+     border: solid 1px rgb(82, 50, 50);
+}
+
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des h5 {
+    padding-top: 5px;
+    color: gray;
+    font-size: .9em;
+    font-family: Arial;
+}
+#product1 .pro .des i {
+    font-size: .7em;
+    color: #a3c11f;
+
+}
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 1em;
+    font-weight: 500;
+    color: #465b52;
+}
+#product1 .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #a3c11f;
+    font-weight: 500;
+    color: #E3E6F3;
+    border: 1px solid red;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(./gmv-imges/sweet-preservatives-500x500.webp);
+    width: 100%;
+    height: 30vh;
+    background-repeat: repeat-x;
+}
+#banner h4 {
+    font-size: 2em;
+    color: rgba(236, 216, 169, 0.857);
+    font-family: 'Trebuchet MS';
+    padding: 10px 0;
+}
+#banner h2 {
+    font-size: 2em;
+    color: rgba(236, 216, 169, 0.857);
+    font-family: 'Trebuchet MS';
+    padding: 10px 5px;
+}
+#banner h2 span {
+    color: brown;
+    font-size: inherit;
+}
+#banner button:hover {
+    background-color: #cce7d0;
+    color: #fff;
+}
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(./bag/images-1.jpg);
+    width: 580px;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+
+}
+#sm-banner h4 {
+    color: #d8ef26;
+    font-size: 20px;
+}
+#sm-banner h2 {
+    color: #2f2b2b;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#sm-banner span {
+    color: #000000de;
+    font-size: 10px;
+    padding: 10px 0;
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(./bag/images-3.jpg);
+    width: 580px;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+}
+#sm-banner .banner-box:hover button {
+    background: #67b0e1;
+    border: 1px solid tomato;
+}
+
